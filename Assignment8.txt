@@ -1,0 +1,36 @@
+Thread states:
+New
+Runnable
+Blocked
+Waiting
+Timed Waiting
+Terminated
+Transition of Thread:
+
+New state:
+
+A thread has been created, but it has not yet started. A thread is started by calling its start() method.
+
+Ready-to-run state:
+
+A thread starts life in the Ready-to-run state 
+
+Running state:
+
+If a thread is in the Running state, it means that the thread is currently executing 
+
+Dead state:
+
+Once in this state, the thread cannot ever run again
+
+Non-runnable states:
+
+A running thread can transit to one of the non-runnable states, depending on the circumstances. A thread remains in a non-runnable state until a special transition occurs. A thread does not go directly to the Running state from a non-runnable state, but transits first to the Ready-to-run state.
+
+The non-runnable states can be characterized as follows:
+
+Sleeping: The thread sleeps for a specified amount of time .
+Blocked for I/O: The thread waits for a blocking operation to complete .
+Blocked for join completion: The thread awaits completion of another thread .
+Waiting for notification: The thread awaits notification from another thread .
+Blocked for lock acquisition: The thread waits to acquire the lock of an object .
